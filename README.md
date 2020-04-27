@@ -1,4 +1,4 @@
-# Automatic Image Colourization using CNNs and InceptionResnetV2
+# Automatic Image Colorization using CNNs and InceptionResnetV2
 ## Overview
 This project showcases my implementation of Baldassarre et al.'s [Deep Koalarization: Image Colourization using CNNs and Inception-ResNet-v2](https://arxiv.org/abs/1712.03400) paper from 2017 using PyTorch. The network is trained using 60 000 images from ImageNet. You can find more information in the Jupyter notebook.
 
