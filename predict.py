@@ -43,8 +43,8 @@ def main(image_dir, checkpoint_path, coloured_images_dir):
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(description="A script that defines and trains the convolutional neural network.") 
     arg_parser.add_argument("--image_dir", type=str, default="test_images", help="The directory where the images you want to colourize are located.")    
-    arg_parser.add_argument("--checkpoint_path", type=str, default="models/colorization_model (0.002478).pt", help="The path to the colourization model.")  
+    arg_parser.add_argument("--checkpoint_path", type=str, default="models/colorization_model (0.002478) (1).pt", help="The path to the colourization model.")  
     arg_parser.add_argument("--coloured_images_dir", type=str, default="image_results", help="The folder to output the coloured images.")      
     args = arg_parser.parse_args()
-
+# models/colorization_model (0.002478) (1).pt
     main(args.image_dir, args.checkpoint_path, args.coloured_images_dir)

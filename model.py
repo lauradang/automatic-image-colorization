@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import pretrainedmodels
 
+torch.nn.Module.dump_patches = True
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 inception = pretrainedmodels.__dict__["inceptionresnetv2"](
     num_classes=1001, 
