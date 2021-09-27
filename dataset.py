@@ -7,10 +7,14 @@ from skimage.color import rgb2lab, rgb2gray
 from pretrainedmodels import utils
 from model import inception
 
+ENCODER_SIZE = 224
+INCEPTION_SIZE = 299
+
 load_img = utils.LoadImage()
 tf_img = utils.TransformImage(inception) 
-encoder_transform = transforms.Compose([transforms.CenterCrop(224)])
-inception_transform = transforms.Compose([transforms.CenterCrop(299)])
+encoder_transform = transforms.Compose([transforms.CenterCrop(ENCODER_SIZE)])
+inception_transform = transforms.Compose([transforms.CenterCrop(INCEPTION_SIZE)])
+
 
 class ImageDataset(datasets.ImageFolder):
   """
