@@ -24,6 +24,8 @@ More results can be found in the notebook and the image results folder.
 2. To retrain the model using your own dataset, run the [notebook](https://github.com/lauradang/automatic-image-colorization/blob/master/notebooks/inception_resnet.ipynb) and replace the file paths with your own.
 3. To colourize your own images using the model provided in `models`, run `streamlit run app.py`. The following UI should be accessible at localhost:8501.
 
+![](image_results/ui.png)
+
 **Note**: The model's image size output is 224x224. If the grayscale image is larger than this, it will be centre cropped to fit these dimensions. To prevent the image from being cut off, resize the image to fit these dimensions before running the prediction script.
    
 ## Built With
